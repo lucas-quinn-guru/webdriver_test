@@ -4,9 +4,10 @@ Once you have cloned this repository, run composer update to get the latest libr
 
 ## Dependencies
 
-- PHP - www.php.net
-- Chrome Web Browser - www.google.com/chrome
-- ChromeDriver - sites.google.com/a/chromium.org/chromedriver/
+- PHP - https://www.php.net
+- Composer - https://getcomposer.org/download
+- Chrome Web Browser - https://www.google.com/chrome
+- ChromeDriver - https://sites.google.com/a/chromium.org/chromedriver/
 
 ## Installation
 

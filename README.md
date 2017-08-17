@@ -13,3 +13,5 @@ This will read the existing composer.json file and install all dependancies.
 ## Running the Example
 
     php webdriver.php
+    
+If the example worked, a chrome browser window open. It will automatically navigate to www.amazon.com and run a search.  If you see a web page with PJ Masks, the process was a success.

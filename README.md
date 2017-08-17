@@ -21,7 +21,7 @@ This will read the existing composer.json file and install all dependancies.
 
     php webdriver.php
     
-If the example worked, a chrome browser window open. It will automatically navigate to www.amazon.com and run a search.  If you see a web page with PJ Masks, the process was a success.
+If the example worked, a chrome browser window open. It will automatically navigate to www.amazon.com and run a search.  If you see a web page with PJ Masks, the process was a success.  Eventually, the browser window that was opened, will close.
 
 You may get an error because our test script cannot find ChromeDriver. Find the following line around line 26
 

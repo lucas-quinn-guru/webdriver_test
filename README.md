@@ -28,3 +28,19 @@ You may get an error because our test script cannot find ChromeDriver. Find the 
     putenv('webdriver.chrome.driver=/opt/local/sbin/chromedriver');
     
 Change this line to reference the path to where you downloaded your ChromeDriver.  Use the full path, not the relative path.
+
+### Notes
+
+When I was first working with Facebook\WebDriver and ChromeDriver, I always got the following error.
+
+    PHP Fatal error:  Uncaught Facebook\WebDriver\Exception\TimeOutException: Timed out waiting for http://localhost:9515/status to become available after 20000 ms. in /Users/user/projects/webdriver_test/vendor/facebook/webdriver/lib/Net/URLChecker.php:37
+    
+To solve this, go into your project directory and find and edit the vendor/facebook/webdirver/lib/Net/URLChecker.php. Change the following line from
+
+    const CONNECT_TIMEOUT_MS = 500;
+
+To 
+
+    const CONNECT_TIMEOUT_MS = 5000;
+
+For some reason, 500ms isn't long enough for my computer to think things through.
